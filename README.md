@@ -1,2 +1,2 @@
-# Phone Plugin
-☎️ Phone plugin
+# Secrets Plugin
+💯 Vault integration plugin
