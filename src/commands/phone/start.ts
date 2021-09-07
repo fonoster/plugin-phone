@@ -30,17 +30,11 @@ export default class CreateCommand extends Command {
   static args = [{name: "name"}];
   static flags = {
     help: flags.help({char: "h"}),
-    "unsecured": flags.string({char: "u", description: "start client unsecured"}),
     "port": flags.integer({char: "p", description: "overwrite default port"})
   };
 
   async run() {
     const {args, flags} = this.parse(CreateCommand);
-
-    if (flags["unsecured"]) {
-      // start
-    }
-
     const port = flags["port"] || PORT
     app.listen(port, async() => {
       await cli.open(`http://localhost:${port}`);
