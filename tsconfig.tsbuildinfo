@@ -161,6 +161,11 @@
         "signature": "d2f31f19e1ba6ed59be9259d660a239d9a3fcbbc8e038c6b2009bde34b175fed",
         "affectsGlobalScope": false
       },
+      "./dist/test/commands/start.test.d.ts": {
+        "version": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
       "./node_modules/tslib/tslib.d.ts": {
         "version": "4576b4e61049f5ffd7c9e935cf88832e089265bdb15ffc35077310042cbbbeea",
         "signature": "4576b4e61049f5ffd7c9e935cf88832e089265bdb15ffc35077310042cbbbeea",
@@ -4448,6 +4453,7 @@
       "../../node_modules/winston/index.d.ts",
       "../../node_modules/winston/lib/winston/config/index.d.ts",
       "../../node_modules/winston/lib/winston/transports/index.d.ts",
+      "./dist/test/commands/start.test.d.ts",
       "./node_modules/@oclif/command/lib/command.d.ts",
       "./node_modules/@oclif/command/lib/flags.d.ts",
       "./node_modules/@oclif/command/lib/index.d.ts",

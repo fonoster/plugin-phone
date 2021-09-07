@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "importHelpers": true,
-    "composite": true,
     "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
     "outDir": "dist",
     "rootDir": "src",
-    "strict": true,
-    "esModuleInterop": true,
-    "target": "es2017"
+    "declaration": true
   },
   "include": [
-    "src"
+    "**/*"
+  ],
+  "exclude": [
+    "dist", "test"
   ]
 }
