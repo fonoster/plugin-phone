@@ -19,9 +19,10 @@
 import "../../config";
 import {Command, flags} from "@oclif/command";
 import express from "express";
+import { join } from "path";
 import { cli } from "cli-ux";
 const app = express();
-app.use(express.static('public'))
+app.use(express.static(join(__dirname, "../../../", "public")));
 const PORT = 5050;
 
 export default class CreateCommand extends Command {
