@@ -48,15 +48,15 @@
       </td>
     </tr>
     <tr>
-      <td>Signal Server:</td>
-      <td>
-        <input type="text" id="server" placeholder="ws://sip.fonoster.io:5062" />
-      </td>
-    </tr>
-    <tr>
       <td>Target AOR:</td>
       <td>
         <input type="text" id="targetAOR" placeholder="sip:1002@sip.fonoster.io" />
+      </td>
+    </tr>    
+    <tr>
+      <td>Signal Server:</td>
+      <td>
+        <input type="text" id="server" placeholder="ws://sip.fonoster.io:5062" />
       </td>
     </tr>
     <tr>
@@ -65,11 +65,18 @@
         <input type="text" id="extraHeaders" placeholder="X-DID-Info: 9122122120," />
       </td>
     </tr>
+    <tr>
+      <td>DTMF Tones:</td>
+      <td>
+        <input type="text" id="dtmfTones" placeholder="1234" />
+      </td>
+    </tr>    
   </table>
 
   <br />
 
   <button id="connect">Call</button>
+  <button id="dtmf">Send Tones</button>
   <button id="disconnect">Hangup</button>
 
   <audio style="display: none" id="remoteAudio" controls>

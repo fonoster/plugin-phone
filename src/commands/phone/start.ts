@@ -19,6 +19,7 @@
 import "../../config";
 import {Command, flags} from "@oclif/command";
 import express from "express";
+import { cli } from "cli-ux";
 const app = express();
 app.use(express.static('public'))
 const PORT = 5050;
@@ -41,8 +42,10 @@ export default class CreateCommand extends Command {
     }
 
     const port = flags["port"] || PORT
-    app.listen(port, () => {
-      console.log(`Starting fonos phone @ localhost:${port}`)
+    app.listen(port, async() => {
+      await cli.open(`http://localhost:${port}`);
+      console.log("Started fonos phone at:")
+      await cli.url(`Started fonos phone @ localhost:${port}`, `http://localhost:${port}`);
     })
   }
 }

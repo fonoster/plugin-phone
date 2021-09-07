@@ -27,6 +27,7 @@ import WPhone from "./wphone";*/
 import WPhone, { getButton, getConfig, getInput, setInput } from "wphone";
 export const connectButton = getButton("connect");
 export const disconnectButton = getButton("disconnect");
+export const dtmfButton = getButton("dtmf");
 
 // Obtaining config from localStorage if available
 window.onload = async () => {
@@ -72,4 +73,8 @@ connectButton.addEventListener("click", async () => {
 
 disconnectButton.addEventListener("click", () => {
   if (phone) phone.disconnect();
+});
+
+dtmfButton.addEventListener("click", () => {
+  if (phone) phone.sendDtmf(getInput("dtmfTones").value);
 });
