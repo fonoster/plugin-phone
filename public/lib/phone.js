@@ -157,8 +157,8 @@ exports.disconnectButton = wphone_1.getButton("disconnect");
 exports.dtmfButton = wphone_1.getButton("dtmf");
 // Obtaining config from localStorage if available
 window.onload = () => __awaiter(void 0, void 0, void 0, function* () {
-    console.debug("Getting config from localStorage [fonosphone]");
-    const configString = window.localStorage.getItem("fonosphone");
+    console.debug("Getting config from localStorage [fonosterPhone]");
+    const configString = window.localStorage.getItem("fonosterPhone");
     if (configString) {
         const config = JSON.parse(configString);
         wphone_1.setInput("displayName", config.displayName);
@@ -187,7 +187,7 @@ exports.connectButton.addEventListener("click", () => __awaiter(void 0, void 0, 
         if (config.extraHeaders) {
             config.extraHeaders = config.extraHeaders.join(",");
         }
-        window.localStorage.setItem("fonosphone", JSON.stringify(config));
+        window.localStorage.setItem("fonosterPhone", JSON.stringify(config));
     }
     catch (e) {
         window.alert(e);

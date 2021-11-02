@@ -1,8 +1,8 @@
 /*
  * Copyright (C) 2021 by Fonoster Inc (https://fonoster.com)
- * http://github.com/fonoster/fonos-plugin-funcs
+ * http://github.com/fonoster/plugin-funcs
  *
- * This file is part of Project Fonos
+ * This file is part of Fonoster
  *
  * Licensed under the MIT License (the "License");
  * you may not use this file except in compliance with
@@ -39,8 +39,8 @@ export default class CreateCommand extends Command {
     const port = flags["port"] || PORT
     app.listen(port, async() => {
       await cli.open(`http://localhost:${port}`);
-      console.log("Started fonos phone at:")
-      await cli.url(`Started fonos phone @ localhost:${port}`, `http://localhost:${port}`);
+      console.log("Started Fonoster phone at:")
+      await cli.url(`Started Fonoter phone @ localhost:${port}`, `http://localhost:${port}`);
     })
   }
 }
