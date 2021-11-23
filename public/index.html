@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Fonoster Phone</title>
+  <title>Test Phone</title>
   <style>
     h1 {
       font-family: 'Courier New', Courier, monospace;
@@ -21,62 +21,62 @@
 </head>
 
 <body>
-  <h1>Fonoster</h1>
+  <h1>Test Phone</h1>
   <table>
-    <tr>
-      <td>Display Name:</td>
+    <tr style="display: none;">
+      <td>Display Name</td>
       <td>
         <input type="text" id="displayName" placeholder="John Doe" />
       </td>
     </tr>
     <tr>
-      <td> Username:</td>
+      <td> Username</td>
       <td>
         <input type="text" id="username" placeholder="1001" />
       </td>
     </tr>
     <tr>
-      <td>Password:</td>
+      <td>Password</td>
       <td>
         <input type="password" id="secret" />
       </td>
     </tr>
     <tr>
-      <td>Domain:</td>
+      <td>Domain</td>
       <td>
-        <input type="text" id="domain" placeholder="sip.fonoster.io" />
+        <input type="text" id="domain" placeholder="acme.fonoster.io" />
       </td>
     </tr>
-    <tr>
-      <td>Target AOR:</td>
+    <tr style="display: none;">
+      <td>Target AOR</td>
       <td>
         <input type="text" id="targetAOR" placeholder="sip:1002@sip.fonoster.io" />
       </td>
     </tr>    
-    <tr>
-      <td>Signal Server:</td>
+    <tr style="display: none;">
+      <td>Signal Server</td>
       <td>
         <input type="text" id="server" placeholder="ws://sip.fonoster.io:5062" />
       </td>
     </tr>
     <tr>
-      <td>Extra Headers:</td>
+      <td>Extra Headers</td>
       <td>
         <input type="text" id="extraHeaders" placeholder="X-DID-Info: 9122122120," />
       </td>
     </tr>
-    <tr>
-      <td>DTMF Tones:</td>
+    <tr style="display: none;">
+      <td>DTMF Tones</td>
       <td>
         <input type="text" id="dtmfTones" placeholder="1234" />
       </td>
-    </tr>    
+    </tr>
   </table>
 
   <br />
 
-  <button id="connect">Call</button>
-  <button id="dtmf">Send Tones</button>
+  <button id="connect">Test</button>
+  <button style="display: none;" id="dtmf">Send Tones</button>
   <button id="disconnect">Hangup</button>
 
   <audio style="display: none" id="remoteAudio" controls>

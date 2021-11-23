@@ -45,6 +45,10 @@ window.onload = async () => {
     setInput("extraHeaders", config.extraHeaders);
   } else {
     console.debug("The phone config is empty");
+    console.debug("Setting default values");
+    setInput("displayName", "Test Phone");
+    setInput("server", "ws://sip.fonoster.io:5062");
+    setInput("targetAOR", "sip:ast@node1");
   }
 };
 
