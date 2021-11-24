@@ -1,7 +1,6 @@
 # Phone Plugin
-☎️ Phone Plugin
 
-Phone simular plugin.
+Phone simulator plugin for Fonoster Command-line Tool.
 
 ## Installing the plugin
 
